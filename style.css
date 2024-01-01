@@ -268,9 +268,10 @@ nav ul li a:hover::after{
 
 .blogs-list {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(3, minmax(250px, 1fr));
     grid-gap: 40px;
     margin-top: 50px;
+    text-align: center;
 }
 
 .blogs-list div{
