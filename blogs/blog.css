@@ -5,6 +5,9 @@
     box-sizing: border-box;
 }
 
+br {
+    padding: 20px;
+}
 h1 {
     text-align: center;
     text-decoration: underline;
@@ -30,7 +33,13 @@ img {
     height: 50vh;
     margin: auto;
     display: block;
-    padding: 20px;
+    outline: solid #ff004f;
+    border-radius: 10px;
+    transition: transform 0.5s ease;
+}
+
+img:hover{
+    transform: scale(1.1);
 }
 
 html {
