@@ -32,7 +32,8 @@
             </div>
         </div>
     </div>
-    
+
+    <!-- About-->
     <div id="about">
         <div class="container">
             <div class="row">
@@ -47,18 +48,23 @@
 
                     <div class="tab-titles">
                         <p class = "tab-links active-link" onclick="opentab('skills')">Skills</p>
-                        <p class = "tab-links">Experience</p>
-                        <p class = "tab-links">Education</p>
+                        <p class = "tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class = "tab-links" onclick="opentab('education')">Education</p>
 
                     </div>
-                    <div class="tab-contents active-tab">
+                    <div class="tab-contents active-tab" id = "skills">
                         <ul>
                             <li><span>UI/UX</span><br>Desigining Web/App Interfaces</li>
                             <li><span>Web Development</span><br>Desigining Web/App Interfaces</li>
                             <li><span>UI/UX</span><br>Desigining Web/App Interfaces</li>
                         </ul>
                     </div>
-                    <div class="tab-contents">
+                    <div class="tab-contents active-tab" id = "experience">
+                        <ul>
+                            <li><span>Experience Section todo</span><br>Desigining Web/App Interfaces</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id = "education">
                         <ul>
                             <li><span>2022 - Expected 2026</span><br>Computer Science at McMaster University</li>
                         </ul>
@@ -69,6 +75,19 @@
             </div>
         </div>
     </div>
+
+    <!-- Blogs -->
+    <div id = "blogs">
+        <div class = "container">
+            <h1 class = "subtitle">My Services</h1>
+            <div class="services-list">
+                
+            </div>
+        </div>
+    </div>
+
+
+    <script src = "index.js"></script>
     
 </body>
 </html>
