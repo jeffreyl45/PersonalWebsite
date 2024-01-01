@@ -5,6 +5,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background: #080808;
     color: #fff;
@@ -366,4 +370,9 @@ form .btn2{
     background: #262626;
     font-weight: 300;
     margin-top: 20px;;
+}
+
+/* for small screens */
+@media only screen and (max-width: 600px){
+
 }
