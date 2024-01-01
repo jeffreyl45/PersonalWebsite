@@ -181,6 +181,7 @@ nav ul li a:hover::after{
     border-radius: 10px;
     position: relative;
     overflow: hidden;
+    width: minmax(250px, 3fr);
 }
 
 .work img {
@@ -232,6 +233,10 @@ nav ul li a:hover::after{
 
 .work:hover .layer{
     height: 100%;
+}
+
+.vanish{
+    display: none;
 }
 
 .btn{

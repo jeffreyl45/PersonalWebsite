@@ -14,7 +14,48 @@ function opentab(tabName) {
     document.getElementById(tabName).classList.add("active-tab");
 }
 
-function expandProject(){
+var projectExpand = true;
+function expandProjects(){
+    var projects = document.getElementsByClassName("work");
+    if (projectExpand === true){
+        for (project of projects) {
+            project.classList.remove("vanish");
+        }
+        projectExpand = false;
+        seeMore.innerHTML = "See Less"
+    } else {
+        var count = 0;
+        for (project of projects) {
+            if (count > 2) {
+                project.classList.add("vanish");
+            }
+            count = count + 1;
+        }
+        projectExpand = true;
+        seeMore.innerHTML = "See More"
+    }
+}
+
+var expandBlog = true;
+function blogExpand(){
+    var blogs = document.getElementsByClassName("blog");
+    if (expandBlog === true){
+        for (blog of blogs) {
+            blog.classList.remove("vanish");
+        }
+        expandBlog = false;
+        seeMoreBlogs.innerHTML = "See Less"
+    } else {
+        var count = 0;
+        for (blog of blogs) {
+            if (count > 2) {
+                blog.classList.add("vanish");
+            }
+            count = count + 1;
+        }
+        expandBlog = true;
+        seeMoreBlogs.innerHTML = "See More"
+    }
 }
 
 function submitForm(){
