@@ -136,6 +136,11 @@ nav ul li a:hover::after{
     font-weight: 500;
     cursor: pointer;
     position: relative;
+    transition: 0.5s;
+}
+
+.tab-links:hover{
+    transform: scale(1.1);
 }
 
 .tab-links::after{
