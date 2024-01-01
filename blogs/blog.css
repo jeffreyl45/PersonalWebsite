@@ -10,9 +10,9 @@ h1 {
     text-decoration: underline;
 }
 
-#date {
+.heading {
     text-align: center;
-    padding: 20px;
+    padding: 1%;
 
 }
 
@@ -22,7 +22,14 @@ hr {
 }
 
 .bodyText {
-    margin: 0px 300px 0px 300px;
+    margin: 0px 20% 0px 20%;
+    padding: 20px;
+}
+
+img {
+    height: 50vh;
+    margin: auto;
+    display: block;
     padding: 20px;
 }
 
