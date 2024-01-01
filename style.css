@@ -259,6 +259,10 @@ nav ul li a:hover::after{
     background: #ff004f;
 }
 
+#thisWebsite {
+    border: solid #ff004f;
+}
+
 
 /* blogs */
 #blogs{
