@@ -372,6 +372,12 @@ form .btn2{
     margin-top: 20px;;
 }
 
+#msg{
+    color: #61b752;
+    mrgin-top: -40px;
+    display: block;
+}
+
 /* for small screens */
 @media only screen and (max-width: 600px){
 
