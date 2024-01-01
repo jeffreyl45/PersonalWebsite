@@ -265,15 +265,14 @@ nav ul li a:hover::after{
     padding: 14px 50px;
     border-radius: 6px;
     color: white;
-    transition: background 0.5s;
+    transition: 0.5s;
     text-decoration: none;
 }
 
 .btn:hover{
     background: #ff004f;
+    transform: scale(1.1);
 }
-
-
 
 /* blogs */
 #blogs{
