@@ -20,9 +20,7 @@ body {
     height: 100vh;
     background-image: url(images/background.png);
     background-position: center;
-    min-width: 400px;
-    min-height: 775px;
-    
+    background-attachment: fixed;
 }
 
 .container {
