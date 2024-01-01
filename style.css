@@ -260,7 +260,6 @@ nav ul li a:hover::after{
 /* blogs */
 #blogs{
     padding: 30px 0px;
-    text-align: center;
 }
 
 .blogs-list {
@@ -302,10 +301,11 @@ nav ul li a:hover::after{
     text-decoration: underline;
 }
 
-#seeMoreBlogs {
-    display: block;
-    margin: 20px auto;
+#seeMoreBlogs{
+    height: 50;
 }
+
+
 
 /*Contact*/
 .contact-left {
