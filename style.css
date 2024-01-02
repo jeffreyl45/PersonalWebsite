@@ -484,6 +484,14 @@ nav .fa-solid {
         margin-top: 50px;
     }
 
+    .blogs-list {
+        display: grid;
+        grid-template-columns: repeat(1, minmax(100px, 1fr));
+        grid-gap: 40px;
+        margin-top: 50px;
+        text-align: center;
+    }
+
     .contact-left, .contact-right{
         flex-basis: 100%;
     }
