@@ -72,10 +72,6 @@ function submitForm(){
     })
   }
 
-function statusUpdate(msg) {
-    msg.innerHTML = "Please wait"
-}
-
 const sideMenu = document.getElementById("sideMenu");
 function openMenu() {
     sideMenu.style.right = "0";
