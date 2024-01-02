@@ -17,15 +17,15 @@
         <div class="container">
             <nav>
                 <img src = "images/logo.png" class = "logo" alt = "logo">
-                <ul>
+                <ul id = "sideMenu">
                     <li><a href = "#header">Home</a></li>
                     <li><a href = "#about">About Me</a></li>
                     <li><a href = "#portfolio">My Projects</a></li>
                     <li><a href = "#blogs">Blogs</a></li>
                     <li><a href = "#contact">Contact Me</a></li>
-
-
+                    <i class="fa-solid fa-xmark" onclick = "closeMenu()"></i>
                 </ul>
+                <i class="fa-solid fa-bars" onclick = "openMenu()"></i>
             </nav>
             <div class = "header-text">
                 <p>Second Year <br> Computer Science Student</p>
@@ -134,7 +134,7 @@
                     </div>
                 </div>
                 <div class="work vanish">
-                    <img src="images/hangman.jpg" alt="Hangman">
+                    <img src="images/hangman.png" alt="Hangman">
                     <div class="layer">
                         <h3>Java Hangman</h3>
                         <p>Hangman in Java! Guess the word before the man is hung!</p>
