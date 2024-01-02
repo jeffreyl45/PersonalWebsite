@@ -1,5 +1,5 @@
-var tabLinks = document.getElementsByClassName("tab-links");
-var tabContents = document.getElementsByClassName("tab-contents");
+let tabLinks = document.getElementsByClassName("tab-links");
+let tabContents = document.getElementsByClassName("tab-contents");
 
 
 // control the tab changes under the About Me section
@@ -14,50 +14,44 @@ function opentab(tabName) {
     document.getElementById(tabName).classList.add("active-tab");
 }
 
-var projectExpand = true;
-function expandProjects(){
-    var projects = document.getElementsByClassName("work");
-    if (projectExpand === true){
-        for (project of projects) {
-            project.classList.remove("vanish");
+let projectExpand = true;
+function expandProjects() {
+    const getExpansion = () => projectExpand;
+    const setExpansion = value => {
+        projectExpand = value;
+    }
+    expand('work', getExpansion, setExpansion, seeMore);
+}
+
+function expand(className, getExpansion, setExpansion, seeMoreElement) {
+    const elements = document.getElementsByClassName(className);
+    if (getExpansion()) {
+        for (element of elements) {
+            element.classList.remove("vanish");
         }
-        projectExpand = false;
-        seeMore.innerHTML = "See Less"
+        setExpansion(false);
+        seeMoreElement.innerHTML = "See Less"
     } else {
-        var count = 0;
-        for (project of projects) {
+        let count = 0;
+        for (element of elements) {
             if (count > 2) {
-                project.classList.add("vanish");
+                element.classList.add("vanish");
             }
             count = count + 1;
         }
-        projectExpand = true;
-        seeMore.innerHTML = "See More"
-    }
+        setExpansion(true);
+        seeMoreElement.innerHTML = "See More"
+    }    
 }
 
-var expandBlog = true;
+let expandBlog = true;
 function blogExpand(){
-    var blogs = document.getElementsByClassName("blog");
-    if (expandBlog === true){
-        for (blog of blogs) {
-            blog.classList.remove("vanish");
-        }
-        expandBlog = false;
-        seeMoreBlogs.innerHTML = "See Less"
-    } else {
-        var count = 0;
-        for (blog of blogs) {
-            if (count > 2) {
-                blog.classList.add("vanish");
-            }
-            count = count + 1;
-        }
-        expandBlog = true;
-        seeMoreBlogs.innerHTML = "See More"
+    const getExpansion = () => expandBlog;
+    const setExpansion = value => {
+        expandBlog = value;
     }
+    expand('blog', getExpansion, setExpansion, seeMoreBlogs);
 }
-
 
 function submitForm(){
   const scriptURL = 'https://script.google.com/macros/s/AKfycbzlOHAY1jkrFBSCnA-SWcYp-sk3akDfyIxK6ol6yX1P6tiwgr_bfnUDVYmnxOhHTaS2/exec'
