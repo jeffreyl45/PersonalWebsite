@@ -50,7 +50,7 @@ function blogExpand(){
     const setExpansion = value => {
         expandBlog = value;
     }
-    expand('blog', getExpansion, setExpansion, seeMoreBlogs);
+    expand('expandBlog', getExpansion, setExpansion, seeMoreBlogs);
 }
 
 function submitForm(){
