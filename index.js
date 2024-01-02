@@ -62,6 +62,7 @@ function submitForm(){
     form.addEventListener('submit', e => {
       e.preventDefault()
       submitButton.innerHTML = "Submitting...";
+      submitButton.disabled = true;
       fetch(scriptURL, { method: 'POST', body: new FormData(form)})
         .then(response => {
           msg.innerHTML = "Your Message Was Sent Successfully!"
@@ -70,6 +71,7 @@ function submitForm(){
           }, 5000)
           form.reset();
           submitButton.innerHTML = "Submit";
+          submitButton.disabled = false;
         })
         .catch(error => console.error('Error!', error.message))
     })
