@@ -57,6 +57,7 @@ function submitForm(){
   const scriptURL = 'https://script.google.com/macros/s/AKfycbzlOHAY1jkrFBSCnA-SWcYp-sk3akDfyIxK6ol6yX1P6tiwgr_bfnUDVYmnxOhHTaS2/exec'
   const form = document.forms['submit-to-google-sheet']
   const msg = document.getElementById("msg")
+  document.getElementById("wait").style = "display: block;";
 
   form.addEventListener('submit', e => {
     e.preventDefault();

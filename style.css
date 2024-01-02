@@ -316,7 +316,8 @@ nav ul li a:hover::after{
 }
 
 .blogs-list .expandBlog{
-    text-decoration: underline;
+    text-decoration: none;
+    color: white;
 }
 
 
@@ -399,11 +400,15 @@ form .btn2{
 
 #msg{
     color: #61b752;
-    mrgin-top: -40px;
+    margin-top: -40px;
     display: block;
 }
 
 nav .fa-solid {
+    display: none;
+}
+
+#wait {
     display: none;
 }
 
