@@ -479,6 +479,10 @@ nav .fa-solid {
         margin-top: 50px;
     }
 
+    .layer p{
+        font-size: 10px;
+    }
+
     .blogs-list {
         display: grid;
         grid-template-columns: repeat(1, minmax(100px, 1fr));
