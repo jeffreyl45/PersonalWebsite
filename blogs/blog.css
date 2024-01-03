@@ -23,7 +23,6 @@ hr {
 .bodyText {
     margin: 0px 20% 0px 20%;
     padding: 20px;
-    text-indent: 30px;
 }
 
 img {
@@ -63,6 +62,8 @@ body {
 .btn:hover{
     background: #ff004f;
 }
+
+
 
 @media only screen and (max-width: 800px) {
     img {
