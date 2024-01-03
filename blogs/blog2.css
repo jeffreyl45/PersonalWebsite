@@ -63,6 +63,40 @@ body {
     background: #ff004f;
 }
 
+nav a{
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li {
+    margin: 10px 20px;
+}
+
+/* changing the font colour and size of the navbar links*/
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+
+/* adding decorative elements under the navbar links*/
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+
+}
+
+nav ul li a:hover::after{
+    width: 100%;
+}
+
 
 
 @media only screen and (max-width: 800px) {
