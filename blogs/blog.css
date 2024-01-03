@@ -26,7 +26,7 @@ hr {
 }
 
 img {
-    height: 50vh;
+    height: 300px;
     margin: auto;
     display: block;
     outline: solid #ff004f;
@@ -65,7 +65,7 @@ body {
 
 @media only screen and (max-width: 800px) {
     img {
-        height: 30vh;
+        height: 200px;
         margin: auto;
         display: block;
         outline: solid #ff004f;

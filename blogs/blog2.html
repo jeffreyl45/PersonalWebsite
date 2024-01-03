@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/f3da34a4a6.js" crossorigin="anonymous"></script>
     
 </head>
 <body>
@@ -19,9 +20,16 @@
     <br>
     <img src ="./images/Open-Book.jpg">
     <br>
-    <nav class = "bodyText">
-        <li> test</li>
-        <li> test2</li>
+    <nav>
+        <ul id = "sideMenu">
+            <li><a href = "#2C03">COMPSCI2C03</a></li>
+            <li><a href = "#2GA3">COMPSCI2GA3</a></li>
+            <li><a href = "#2LC3">COMPSCI2LC3</a></li>
+            <li><a href = "#2ME3">COMPSCI2ME3</a></li>
+            <li><a href = "#2D03">STATS2D03</a></li>
+            <i class="fa-solid fa-xmark" onclick = "closeMenu()"></i>
+        </ul>
+        <i class="fa-solid fa-bars" onclick = "openMenu()"></i>
     </nav>
     <p class = "bodyText">
         Hello internet and happy new year everyone! Today marks the first day that my personal portfolio website goes live. I am excited to continue
