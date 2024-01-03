@@ -26,7 +26,7 @@ hr {
 }
 
 .fireworks {
-    height: 400px;
+    height: 30vh;
     margin: auto;
     display: block;
     outline: solid #ff004f;
@@ -61,17 +61,4 @@ body {
 
 .btn:hover{
     background: #ff004f;
-}
-
-
-
-@media only screen and (max-width: 800px) {
-    img {
-        height: 200px;
-        margin: auto;
-        display: block;
-        outline: solid #ff004f;
-        border-radius: 10px;
-        transition: transform 0.5s ease;
-    }
 }
