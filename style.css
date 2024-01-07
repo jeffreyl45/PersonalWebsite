@@ -504,4 +504,9 @@ nav .fa-solid {
         font-size: 14px;
     }
 
+    .header-text{
+        margin-top: 0;
+        font-size: 22px;
+    }
+
 }
