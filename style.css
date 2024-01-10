@@ -229,7 +229,7 @@ nav ul li a:hover::after{
     font-size: 14px;
 }
 
-.work p {
+.work p, #ebert {
     font-size: 1rem;
 }
 
@@ -246,10 +246,12 @@ nav ul li a:hover::after{
 }
 
 #ebert {
+    margin-top: 0px;
     background: none;
     color: white;
     font-size: 12px;
     text-decoration: underline;
+    line-height: 0px;
 }
 
 
