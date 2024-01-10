@@ -245,6 +245,14 @@ nav ul li a:hover::after{
     border-radius: 50%;
 }
 
+#ebert {
+    background: none;
+    color: white;
+    font-size: 12px;
+    text-decoration: underline;
+}
+
+
 .layer p {
     font-size: 12px;
 }
@@ -415,6 +423,7 @@ form .btn2{
 nav .fa-solid {
     display: none;
 }
+
 
 /* CSS for small screens */
 @media only screen and (max-width: 800px) {
