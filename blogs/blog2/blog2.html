@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Second Ever Hackathon</title>
+    <link rel="stylesheet" href="blog2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <h1>My Second Ever Hackathon</h1>
+    <p class = "heading">Date: January 14, 2024</p>
+    <p class = "heading">Blog #2</p>
+    <hr/>
+    <br>
+    <br>
+    <img src ="deltaHacks.jpg" alt = "Delta Hacks Logo">
+    <br>
+    <div class = "bodyText">
+        <h2 class = "title">Table of Contents</h2>
+        <nav>
+            <ul>
+                <li><a href = "#intro">Introduction</a></li>
+                <li><a href = "#project">My Project</a></li>
+                <li><a href = "#conclusion">Concluding Thoughts</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="bodyText">
+        <div id = "intro">
+            <h3 class = "title">Introduction</h3>
+            <br>
+            <p>
+                From January 12 to January 14 2024, I attended <a href = "https://deltahacks-x.devpost.com/" id = "deltaHacksLink">DeltaHacks X</a> hosted at
+                McMaster University, which was my second ever hackathon experience. Overall I had a blast,
+                I met so many talented individuals, I was able to get a working project demo within the limited
+                time constraints and I learned so much. I would call that a productive weekend!
+            </p>
+            <br />
+            <p>
+                My team consisted of 4 second year computer science students, 3 from McMaster University 
+                    and 1 from the University of Waterloo. For half of my team, this was their very first 
+                    hackathon ever.
+            </p>
+            <br />
+            <p>
+                While our submitted project did not win any awards, we are all still proud of what we accomplished
+                and hold onto the lessons we have learnt from this experience. The judges even personally told us that 
+                despite not winning any awards, our project definitely ranked near the top of all the projects they observed.
+            </p>
+        </div>
+        <br>
+        <div id="project">
+            <h3 class="title">Our Project</h3>
+                <br/>
+                <a href="https://github.com/deltahacks-tai/backend"><img src = "tai.png" alt = "logo of tai"></a>
+                <br />
+                <p>
+                    Our project was submitted for 2 challenges at DeltaHacks X: the best productivity hack and the best
+                    education hack. Our project aimed to reduce the multi-tasking students needed to do (especially switching tabs) when completing their university
+                    coursework. In the modern day, AI has become such a prevalent part of student life whether its to ask it to explain a concept
+                    or solve a problem. Unfortunately, university course websites such as D2L or McMaster's Avenue To Learn have not yet integrated AI into their systems
+                    to improve the convenience of students. Thus, our project aimed to harness the power of AI and create a modern day student
+                    course website that would allow students to reduce their tab switching multi-tasking efforts to increase their concentration and focus.
+                </p>
+                <br/>
+                <p>
+                    To do this, we used the Cohere API to act as the AI chatbot we integrated into the student course website. The API itself is already trained to 
+                    explain concepts and answer questions (e.g. explain quantum physics in basic terms). We also gave the Cohere API access to data within the student course website
+                    such as their current grades in the course and upcoming assignments to allow students to simply ask our chatbot
+                    when their next assignment was due, their current grade in the course and more without needing to switch tabs!
+                </p>
+                <br>
+                <p>
+                    For the front-end, we used HTMX, Jinja, Tailwind and CSS to create a visually appealing design.
+                    Prior to this hackathon, I have had limited exposure to these tools so I was definitely glad to have learned something new from the people
+                    I was working with. 
+                </p>
+                <br>
+                <p>
+                    While learning the new front end tools for a bit was fun, my  main role specifically was focused mainly on testing the Cohere API, writing short demonstration scripts to teach my
+                    team members how to use the API. We initially ran into an issue, our chatbot was giving responses far too long and would ask many follow up questions. The goal of the chatbot
+                    was to provide a short, clear and concise response to the student. After some research, I discovered you could feed the API a preamble or a statement to give Cohere an initial instruction
+                    before it started answering questions. This instantly fixed our issue.
+                </p>
+        </div>
+        <br/>
+        <div id="Concluding Thoughts">
+            <h3 class="title">Concluding Thoughts</h3>
+            <br/>
+            <p>
+                In conclusion, I am very pleased with the way my second ever hackathon turned out.
+                I got to meet a lot of new people, learn how to use some new tools and successfully develop
+                a project with a very strong pitch to the judges. I hope to take this newfound knowledge with me and apply it to 
+                future hackathons and develop an even more innovative project next time.
+            </p>
+        </div>
+
+    </div>
+
+    <a href = "../index.html#blogs" class = "btn">Go Back</a>
+</body>
+</html>
